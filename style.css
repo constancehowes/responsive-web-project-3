@@ -1,9 +1,13 @@
-h1 {
-    color: green;
+/* Global (Desktop) View */
+
+
+/* Tablet View */
+@media (max-width: 768px){
+
 }
 
-@media (max-width: 768px){
-    h1{
-        color:orange;
-    }
+/* Mobile View */
+@media (max-width: 500px){
+
+
 }

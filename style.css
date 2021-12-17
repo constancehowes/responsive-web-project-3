@@ -1,3 +1,4 @@
+
 /* Global (Desktop) View */
 .container {
     background-color:rgb(39, 176, 181);
@@ -16,12 +17,20 @@
     margin-bottom: 40px
 }
 
+.hide-desktop-only {
+    display: none;
+}
 
 /* Tablet View */
 @media (max-width: 768px){
 .col{
     width: 45%;
 }
+
+.hide-desktop-only {
+    display: block;
+}
+
 }
 
 

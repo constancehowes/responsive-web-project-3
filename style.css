@@ -1,13 +1,37 @@
 /* Global (Desktop) View */
 
+.container {
+    background-color:rgb(39, 176, 181);
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    background-color:cornsilk;
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px
+}
+
 
 /* Tablet View */
 @media (max-width: 768px){
-
+.col{
+    width: 45%;
 }
+}
+
+
+
 
 /* Mobile View */
 @media (max-width: 500px){
-
+.col {
+    width: 100%;
+}
 
 }

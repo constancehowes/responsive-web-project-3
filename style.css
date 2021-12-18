@@ -1,10 +1,17 @@
 /* Global (Desktop) View */
 body {
     font-family: 'Inter', sans-serif;
+    color:white;
+    background-color: #ebebeb;
+}
+
+a { 
+    color:white;
+    text-decoration: none;
 }
 
 .header-container{
-    background-color:grey;
+    background-color:rgb(84, 84, 84);
     min-height: 100px;
     margin-bottom: 40px;
 
@@ -12,12 +19,27 @@ body {
 
 header {
     width:1024px;
-    background-color:darkcyan;
     min-height:100px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
+nav a {
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+.logo {
 
+}
+
+nav {
+
+}
 
 .container {
     min-height: 500px;
@@ -57,7 +79,7 @@ header {
 
 
 .footer-container{
-    background-color:grey;
+    background-color:rgb(84, 84, 84);
     min-height: 100px;
     margin-bottom: 40px;
 
@@ -65,7 +87,6 @@ header {
 
 footer {
     width:1024px;
-    background-color:darkcyan;
     min-height:100px;
     margin: 0 auto;
 }

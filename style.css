@@ -30,7 +30,6 @@ a {
 
 header {
     max-width: 1024px;
-    /* background-color: blueviolet; */
     min-height: 100px;
     margin: 0 auto;
     display: flex;

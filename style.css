@@ -1,37 +1,14 @@
-/* Global (Desktop) View */
+/* Global View aka Desktop View */
+
 body {
-    font-family: 'Inter', sans-serif;
-    color:white;
-    background-color: #ebebeb;
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
 }
 
-a { 
-    color:white;
+a {
+    color: white;
     text-decoration: none;
-}
-
-.header-container{
-    background-color:rgb(84, 84, 84);
-    min-height: 100px;
-    margin-bottom: 40px;
-
-}
-
-header {
-    width:1024px;
-    min-height:100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
-
-nav a {
-    text-decoration: none;
-    color:white;
-    padding: 10px 20px;
-    margin-left: 10px;
-    border: 1px solid white;
 }
 
 .container {
@@ -41,20 +18,36 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .col {
-    background-color: rgb(39, 176, 181);
     width: 30%;
     margin-bottom: 40px;
+    background-color: rgb(43, 226, 147);
 }
 
 .col p {
-    font-size: .875rem;
-    color:white;
-    padding: 20px 20px; 
+    font-size: 0.825rem;
+    padding: 20px 25px;
     line-height: 1.25rem;
-    text-align: left
 }
 
 .hide-desktop-only {
@@ -70,23 +63,23 @@ nav a {
     font-weight: 700;
 }
 
-
-.footer-container{
-    background-color:rgb(84, 84, 84);
-    min-height: 100px;
-    margin-bottom: 40px;
-
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
 }
 
-footer {
-    width:1024px;
-    min-height:100px;
-    margin: 0 auto;
+
+.highlight {
+    font-weight: 700;
 }
+
 
 
 /* Tablet View */
 @media (max-width: 768px) {
+
     .col {
         width: 45%;
     }
@@ -95,15 +88,49 @@ footer {
         display: block;
     }
 
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .mybutton {
+        margin-left: 0;
+    }
+
+
 }
 
 
 
-
 /* Mobile View */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+
     .col {
         width: 100%;
     }
+
+
+    .hide-mobile {
+        display: none;
+    }
+
+
+
 
 }
